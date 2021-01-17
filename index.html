@@ -1,0 +1,137 @@
+<head>
+
+    <style>
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto 1fr auto;
+            justify-items: center;
+
+
+        }
+
+        .header-navigation {
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50vw;
+            justify-content: space-between;
+        }
+
+        .header-items{
+            display: flex;
+            padding: 10px;
+        }
+
+        .nav-item{
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+
+        header {
+            height: 20px;
+        }
+
+        #pageheader {
+            height: 20px;
+        }
+
+        .main-content{
+            text-align: center;
+        }
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12;
+            color: grey;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .big-logo{
+            margin-top: 20%;
+        }
+
+        .language {
+            color: blue;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12;
+            margin-top: 2em;
+        }
+        #searchfield {
+            margin: 2em;
+            width: 600px;
+            height: 3em;
+            border-radius: 4%/50%;
+            border-color: rgb(219, 219, 219);
+            border-style: solid;
+            border-width: 1px;
+            color: rgb(60, 60, 60);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14;
+            padding-left: 20px;
+        }
+
+        button{
+            background-color: rgb(245, 245, 245);
+            padding: 0.5em 1em 0.5em 1em;
+            color: rgb(40, 40, 40);
+            border-style: none;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" id="pageheader">
+            <nav class="header-navigation">
+                <div class="header-left header-items">
+                    <div class="nav-1 nav-item">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="nav-2 nav-item">
+                        <a href="#">Store</a>
+                    </div>
+                </div>
+                <div class="header-right header-items">
+                    <div class="nav-3 nav-item">
+                        <a href="#">Gmail</a>
+                    </div>
+                    <div class="nav-4 nav-item">
+                        <a href="#">Images</a>
+                    </div>
+                    <div class="nav-apps nav-item">
+                        <a href="#">Apps</a>
+                    </div>
+                    <div class="nav-account nav-item">
+                        <a href="#">Account</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main-content"> 
+            <img class="big-logo"
+                src= "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt= "une logó de Gugȩl">
+
+            <form action="" method="" class="search-form">
+                <div>
+                    <input type="text" name="query" id="searchfield" required value="You can search, but I don't think you'll find anything ;)">
+                    <div class="button-bar">
+                        <button type="submit" name="submit" id="submitbutton">Google Search</button>
+                        <button type="button" name="lucky" id="luckybutton">I'm Feeling Lucky</button>
+                    <p>Google offered in: <a class="language" href="#">Deutsch</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
